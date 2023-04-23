@@ -25,9 +25,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForDay2() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(2));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -36,9 +36,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForDay1() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(-1));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -48,7 +48,7 @@ public class SelenideNegativeTest {
     @Test
     void shouldTestForEmptyCity() {
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -57,9 +57,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForEmptyDate() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(Keys.BACK_SPACE);
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -68,7 +68,7 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForEmptyName() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
@@ -78,9 +78,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForLatinaName() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Pushkin Aleksandr");
+        $("[data-test-id=name] .input__control").setValue("Antonov Dmitriy");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -89,9 +89,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForEmptyPhone() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
         $("[data-test-id=phone] .input__sub").shouldHave(Condition.text("Поле обязательно для заполнения"));
@@ -99,9 +99,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForWrongPhone() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+7987872362443");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -110,9 +110,9 @@ public class SelenideNegativeTest {
 
     @Test
     void shouldTestForEmptyCheckBox() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $(".button__content").click();
         $("[data-test-id=agreement].input_invalid .checkbox__text").shouldHave(Condition.text("Я соглашаюсь с условиями обработки и использования моих персональных данных"));

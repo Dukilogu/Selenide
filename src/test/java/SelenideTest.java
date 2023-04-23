@@ -23,9 +23,9 @@ public class SelenideTest {
 
     @Test
     void shouldTestForDay3() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -35,9 +35,9 @@ public class SelenideTest {
 
     @Test
     void shouldTestForDay4() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(4));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -47,9 +47,9 @@ public class SelenideTest {
 
     @Test
     void shouldTestForDay10() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(10));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -59,9 +59,9 @@ public class SelenideTest {
 
     @Test
     void shouldTestForDay365() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(365));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -71,10 +71,10 @@ public class SelenideTest {
 
     @Test
     void shouldTestForSelectFromList() {
-        $("[data-test-id=city] .input__control").setValue("Ор");
-        $$(".menu-item__control").find(Condition.exactText("Оренбург")).click();
+        $("[data-test-id=city] .input__control").setValue("Во");
+        $$(".menu-item__control").find(Condition.exactText("Воронеж")).click();
         $("[data-test-id=date] .input__control").doubleClick().sendKeys(setLocalDate(3));
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
@@ -85,10 +85,10 @@ public class SelenideTest {
     //тест про календарь не для проверки, он не доделан.
     /*@Test
     void shouldTestForWeekAhead() {
-        $("[data-test-id=city] .input__control").setValue("Оренбург");
+        $("[data-test-id=city] .input__control").setValue("Воронеж");
         $("[data-test-id=date] button").click();
         $(".popup__content").find()
-        $("[data-test-id=name] .input__control").setValue("Пушкин Александр");
+        $("[data-test-id=name] .input__control").setValue("Антонов Дмитрий");
         $("[data-test-id=phone] .input__control").setValue("+79878723624");
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
